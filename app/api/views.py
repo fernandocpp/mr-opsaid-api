@@ -6,7 +6,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import auth
 from . import api
-from ..models import User, Currency, Business, Account, MovementCategory, Movement
+from ..models import User
 from app import db, create_app
 from functools import wraps
 
