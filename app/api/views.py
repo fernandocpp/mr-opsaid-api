@@ -207,3 +207,93 @@ def get_user(current_user):
         }
 
     return jsonify(output)
+
+
+@api.route('/home', methods=['GET'])#@token_required
+def get_home_static():#(current_user):
+    #data = request.get_json()
+    #user = User.query.filter_by(id=current_user.id).first()
+
+    output = {
+
+        'summaries_bussines' : [
+            {
+            'id' : 1,
+            'name' : 'Cuenta personal de Pepito Topitos', 
+            'creator_id' : 3,
+            'business_type' : 1,
+            'is_favorite' : 0,
+            'is_last_selected': 1,
+            'members' : [],
+            'accounts' : [
+                {
+                    'id' : 1,
+                    'name' : 'Efectivo Soles',
+                    'is_last_selected': 0, 
+                    'creator_id' : 3,
+                    'currency_id' : 2,
+                    'currency_code' : 'PEN',
+                    'currency_abbr' : 'S/',
+                    'total_amount' : 35.00
+                },
+                {
+                    'id' : 2,
+                    'name' : 'Efectivo Dolares',
+                    'is_last_selected': 1, 
+                    'creator_id' : 3,
+                    'currency_id' : 1,
+                    'currency_code' : 'USD',
+                    'currency_abbr' : '$',
+                    'total_amount' : 100.00
+                }
+
+            ]
+
+            },
+
+            {
+            'id' : 2,
+            'name' : 'Diaspora Proyect', 
+            'creator_id' : 3,
+            'business_type' : 2,
+            'is_favorite' : 0,
+            'is_last_selected': 0,
+            'members' : [
+                {
+                    'id' : 3,
+                    'display_name' : 'Fernando Morales',
+                    'email' : 'fernando.zmorales@gmail.com'
+                },
+                {
+                    'id' : 4,
+                    'display_name' : 'Carlo Murga',
+                    'email' : 'carlomurga@gmail.com'
+                }
+
+            ],
+            'accounts' : [
+                {
+                    'id' : 3,
+                    'name' : 'Efectivo Soles',
+                    'is_last_selected': 0,
+                    'creator_id' : 3,
+                    'currency_id' : 2,
+                    'currency_code' : 'PEN',
+                    'currency_abbr' : 'S/',
+                    'total_amount' : 10.00
+                },
+                {
+                    'id' : 4,
+                    'name' : 'Efectivo Dolares',
+                    'is_last_selected': 0,
+                    'creator_id' : 3,
+                    'currency_id' : 1,
+                    'currency_code' : 'USD',
+                    'currency_abbr' : '$',
+                    'total_amount' : 12.00
+                }
+            ]
+            }
+        ]
+    }
+    return jsonify(output)
