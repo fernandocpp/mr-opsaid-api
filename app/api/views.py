@@ -146,7 +146,7 @@ def create_user():
             #new_role = 2 if data['email'] == "fernandoadmin@gmail.com" else 1
             new_role = 2 if data['email'] in admin_mails else 1
             new_user = User(public_id=user.uid, email=data['email'], 
-                #first_name=data['first_name'], last_name=data['last_name'],
+                first_name=first_name, last_name='last_name',
                 display_name=display_name, 
                 role=new_role) #, gender=data['gender'])
             #output['user']['role'] = new_role
