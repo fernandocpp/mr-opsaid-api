@@ -121,7 +121,12 @@ def create_user():
 
     user_available = email_available(data['email'])
 
-    data['display_name'] = data['first_name'] + ' ' + data['display_name'] if 'display_name' not in data else data['display_name']
+    display_name =  data['display_name'] if 'display_name' in data else ''
+    first_name = data['first_name'] if 'first_name' in data else ''
+    last_name = data['last_name'] if 'last_name' in data else ''
+
+    if (display_name == '' and first_name != '' and last_name != ''):
+        display_name = first_name + ' ' +  last_name
 
     if user_available:
         user = False
@@ -129,7 +134,7 @@ def create_user():
             user = auth.create_user(
                 email=data['email'],
                 password=data['password'],
-                display_name=data['display_name'],
+                display_name=display_name,
                 disabled=False)
         except Exception as e:
             print(e)
@@ -142,7 +147,7 @@ def create_user():
             new_role = 2 if data['email'] in admin_mails else 1
             new_user = User(public_id=user.uid, email=data['email'], 
                 #first_name=data['first_name'], last_name=data['last_name'],
-                display_name=data['display_name'], 
+                display_name=display_name, 
                 role=new_role) #, gender=data['gender'])
             #output['user']['role'] = new_role
             db.session.add(new_user)
