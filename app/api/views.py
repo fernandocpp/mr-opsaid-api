@@ -121,6 +121,8 @@ def create_user():
 
     user_available = email_available(data['email'])
 
+    data['display_name'] = data['first_name'] + ' ' + data['display_name'] if 'display_name' not in data else data['display_name']
+
     if user_available:
         user = False
         try:
