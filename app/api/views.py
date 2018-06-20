@@ -126,7 +126,7 @@ def create_user():
     last_name = data['last_name'] if 'last_name' in data else ''
 
     if (display_name == '' and first_name != '' and last_name != ''):
-        display_name = first_name + ' ' +  last_name
+        display_name = first_name.split(' ', 1)[0] + ' ' +  last_name.split(' ', 1)[0]
 
     if user_available:
         user = False
