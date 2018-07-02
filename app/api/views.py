@@ -235,84 +235,43 @@ def get_home_static():#(current_user):
     #user = User.query.filter_by(id=current_user.id).first()
 
     output = {
-
+        'success' : 'true',
         'news' : [
             {
             'id' : 1,
-            'name' : 'Cuenta personal de Pepito Topitos', 
-            'creator_id' : 3,
-            'business_type' : 1,
-            'is_favorite' : 0,
-            'is_last_selected': 1,
-            'members' : [],
-            'accounts' : [
-                {
-                    'id' : 1,
-                    'name' : 'Efectivo Soles',
-                    'is_last_selected': 0, 
-                    'creator_id' : 3,
-                    'currency_id' : 2,
-                    'currency_code' : 'PEN',
-                    'currency_abbr' : 'S/',
-                    'total_amount' : 35.00
-                },
-                {
-                    'id' : 2,
-                    'name' : 'Efectivo Dolares',
-                    'is_last_selected': 1, 
-                    'creator_id' : 3,
-                    'currency_id' : 1,
-                    'currency_code' : 'USD',
-                    'currency_abbr' : '$',
-                    'total_amount' : 100.00
-                }
-
-            ]
-
+            'title' : 'Hay topos en la playa', 
+            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'img_large': 'https://www.nytimes.com/images/2018/07/01/briefing/02ambriefing-asia-promo/02ambriefing-asia-promo-mediumThreeByTwo440.jpg'
             },
-
             {
             'id' : 2,
-            'name' : 'Diaspora Proyect', 
-            'creator_id' : 3,
-            'business_type' : 2,
-            'is_favorite' : 0,
-            'is_last_selected': 0,
-            'members' : [
-                {
-                    'id' : 3,
-                    'display_name' : 'Fernando Morales',
-                    'email' : 'fernando.zmorales@gmail.com'
-                },
-                {
-                    'id' : 4,
-                    'display_name' : 'Carlo Murga',
-                    'email' : 'carlomurga@gmail.com'
-                }
-
-            ],
-            'accounts' : [
-                {
-                    'id' : 3,
-                    'name' : 'Efectivo Soles',
-                    'is_last_selected': 0,
-                    'creator_id' : 3,
-                    'currency_id' : 2,
-                    'currency_code' : 'PEN',
-                    'currency_abbr' : 'S/',
-                    'total_amount' : 10.00
-                },
-                {
-                    'id' : 4,
-                    'name' : 'Efectivo Dolares',
-                    'is_last_selected': 0,
-                    'creator_id' : 3,
-                    'currency_id' : 1,
-                    'currency_code' : 'USD',
-                    'currency_abbr' : '$',
-                    'total_amount' : 12.00
-                }
-            ]
+            'title' : 'Hay topos en la playa', 
+            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'img_large': 'https://www.nytimes.com/images/2018/06/22/us/politics/backlash-ltr/00republicans1-mediumThreeByTwo440-v4.jpg'
+            },
+            {
+            'id' : 3,
+            'title' : 'Hay topos en la playa', 
+            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'img_large': 'https://www.nytimes.com/images/2018/07/02/business/02AHEAD/merlin_140591313_c5e6fa0e-a071-44fa-a1da-a22bf96bb12b-mediumThreeByTwo440.jpg'
+            },
+            {
+            'id' : 4,
+            'title' : 'Hay topos en la playa', 
+            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'img_large': 'https://www.nytimes.com/images/2018/07/01/us/01dc-protest-1sub/merlin_140546832_6410f6ce-d14d-4270-b329-adfb88b1938b-mediumThreeByTwo440.jpg'
+            },
+            {
+            'id' : 5,
+            'title' : 'Hay topos en la playa', 
+            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'img_large': 'https://www.nytimes.com/images/2018/07/02/science/02-jp-abortion-print/00ABORTION1-mediumThreeByTwo440.jpg'
+            },
+            {
+            'id' : 6,
+            'title' : 'Hay topos en la playa', 
+            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'img_large': 'https://www.nytimes.com/images/2018/07/02/world/02TRAVEL-BAN-03/02TRAVEL-BAN-03-mediumThreeByTwo440.jpg'
             }
         ]
     }
