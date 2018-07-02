@@ -117,7 +117,7 @@ def get_testhtml():
     htmlstr += 'La inteligencia artificial es una gran oportunidad de dejar más tiempo para el ser humano, pero definitivamente la ciencia parece estar siendo influenciada por los efectos especiales, lo que nos trae a hablar de las grandes inversiones que se hacen hoy en día en personas de metal, "que nos superan en mente y cuerpo". Es sin duda un prodigio de la tecnología lograr los avances que hoy en día vemos, pero la gran pregunta ¿ son los androides la respuesta a las necesidades que tiene la humanidad en estos momentos?'
     htmlstr += '<div id="ember1072" class="ember-view">'
     htmlstr += '<div class="reader-article-content">'
-    htmlstr += '<div class="slate-resizable-image-embed slate-image-embed__resize-right" data-imgsrc="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAxlAAAAJDJhYmMyZDM1LTQ5NzItNDJhMS05ZGM0LWY5YTE5YzE5ZTZiZg.jpg"><img class="aligncenter" src="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAxlAAAAJDJhYmMyZDM1LTQ5NzItNDJhMS05ZGM0LWY5YTE5YzE5ZTZiZg.jpg" data-li-src="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAxlAAAAJDJhYmMyZDM1LTQ5NzItNDJhMS05ZGM0LWY5YTE5YzE5ZTZiZg.jpg" /></div>'
+    htmlstr += '<div class="slate-resizable-image-embed slate-image-embed__resize-right" data-imgsrc="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAxlAAAAJDJhYmMyZDM1LTQ5NzItNDJhMS05ZGM0LWY5YTE5YzE5ZTZiZg.jpg"><img class="aligncenter" src="https://www.nytimes.com/images/2018/07/02/business/02AHEAD/02AHEAD-square640.jpg" data-li-src="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAxlAAAAJDJhYmMyZDM1LTQ5NzItNDJhMS05ZGM0LWY5YTE5YzE5ZTZiZg.jpg" /></div>'
     htmlstr += '&nbsp;'
     htmlstr += 'Es verdad que el alcance de los cerebros electrónicos es superior al nuestro, pero para las tareas que deben cumplir estos inventos, la forma humana no es la ideal para cumplir los objetivos, me explico con un ejemplo simple, el ángulo de visión de un ser humano es de aproximadamente 180º en el plano horizontal, mientras que una simple mosca cubre el 360°, lo que demuestra que invertir recursos en replicar las características con menos ventajas a otras conocidas, es una muestra de que nos consideramos el mejor modelo a seguir.'
     htmlstr += '<div class="slate-resizable-image-embed slate-image-embed__resize-left" data-imgsrc="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAufAAAAJGJmMDgyOTE2LTgzNmUtNGM1Mi1iOWYzLTk5Mzg4NDliMTRlOA.jpg"><img class="alignright" src="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAufAAAAJGJmMDgyOTE2LTgzNmUtNGM1Mi1iOWYzLTk5Mzg4NDliMTRlOA.jpg" data-li-src="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAufAAAAJGJmMDgyOTE2LTgzNmUtNGM1Mi1iOWYzLTk5Mzg4NDliMTRlOA.jpg" /></div>'
@@ -236,7 +236,7 @@ def get_home_static():#(current_user):
 
     output = {
 
-        'summaries_bussines' : [
+        'news' : [
             {
             'id' : 1,
             'name' : 'Cuenta personal de Pepito Topitos', 
