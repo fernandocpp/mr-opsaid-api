@@ -108,6 +108,26 @@ def get_all_users():
 def get_test():
     return jsonify({'success' : 'true'})
 
+@api.route('/testhtml/', methods=['GET'])
+def get_testhtml():
+    htmlstr = ''
+    htmlstr += '&nbsp;'
+    htmlstr += 'Hemos visto por mucho tiempo, la forma en que los avances tecnológicos mejoran la calidad de vida de cada una de nuestras generaciones, desde la simple rueda hasta el Internet de las cosas, cada desarrollo ha cambiando la forma de vida de las sociedades que se beneficiaron de estos adelantos, la evolución estaba garantizada cada vez que un nuevo desarrollo aparecía.'
+    htmlstr += 'Ahora bien, la búsqueda de la mejorar, muchas veces se cruza con el ocio, lo que significa que las nuevas tecnologías no siempre son garantía de que estamos en la senda del progreso, por cuando se presentan los nuevos modelos de Iphone, la noticia más importante es hacer "nuestros propios emojis". Sin duda algo divertido, pero si privamos la necesidad por el entretenimiento podemos frenar avances reales.'
+    htmlstr += 'La inteligencia artificial es una gran oportunidad de dejar más tiempo para el ser humano, pero definitivamente la ciencia parece estar siendo influenciada por los efectos especiales, lo que nos trae a hablar de las grandes inversiones que se hacen hoy en día en personas de metal, "que nos superan en mente y cuerpo". Es sin duda un prodigio de la tecnología lograr los avances que hoy en día vemos, pero la gran pregunta ¿ son los androides la respuesta a las necesidades que tiene la humanidad en estos momentos?'
+    htmlstr += '<div id="ember1072" class="ember-view">'
+    htmlstr += '<div class="reader-article-content">'
+    htmlstr += '<div class="slate-resizable-image-embed slate-image-embed__resize-right" data-imgsrc="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAxlAAAAJDJhYmMyZDM1LTQ5NzItNDJhMS05ZGM0LWY5YTE5YzE5ZTZiZg.jpg"><img class="aligncenter" src="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAxlAAAAJDJhYmMyZDM1LTQ5NzItNDJhMS05ZGM0LWY5YTE5YzE5ZTZiZg.jpg" data-li-src="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAxlAAAAJDJhYmMyZDM1LTQ5NzItNDJhMS05ZGM0LWY5YTE5YzE5ZTZiZg.jpg" /></div>'
+    htmlstr += '&nbsp;'
+    htmlstr += 'Es verdad que el alcance de los cerebros electrónicos es superior al nuestro, pero para las tareas que deben cumplir estos inventos, la forma humana no es la ideal para cumplir los objetivos, me explico con un ejemplo simple, el ángulo de visión de un ser humano es de aproximadamente 180º en el plano horizontal, mientras que una simple mosca cubre el 360°, lo que demuestra que invertir recursos en replicar las características con menos ventajas a otras conocidas, es una muestra de que nos consideramos el mejor modelo a seguir.'
+    htmlstr += '<div class="slate-resizable-image-embed slate-image-embed__resize-left" data-imgsrc="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAufAAAAJGJmMDgyOTE2LTgzNmUtNGM1Mi1iOWYzLTk5Mzg4NDliMTRlOA.jpg"><img class="alignright" src="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAufAAAAJGJmMDgyOTE2LTgzNmUtNGM1Mi1iOWYzLTk5Mzg4NDliMTRlOA.jpg" data-li-src="https://media.licdn.com/mpr/mpr/AAIAAgDGAAAAAQAAAAAAAAufAAAAJGJmMDgyOTE2LTgzNmUtNGM1Mi1iOWYzLTk5Mzg4NDliMTRlOA.jpg" /></div>'
+    htmlstr += 'Si este patrón continua, podemos decirle al señor <strong>Hawking</strong> y al señor <strong>Musk</strong>, que no hay nada que temerle a las máquinas, porque al igual que con la amplificación de ruido, ampliaremos los defectos de los seres humanos, en estos cybors, así que bastará con atacar esos errores para hacer frente a Terminator.'
+    htmlstr += 'Si vemos con objetividad el verdadero curso de lo que se necesita en robots mecánicos, copiar el caminar de un ser humano no hace grandioso el trabajo de estos nuevos equipos, debemos llevar el desarrollo a cubrir necesidades reales, estructuras capaces de rescatar víctimas de terremotos, apagar un incendio forestal de manera efectiva, salvarnos en condiciones extremas, dispositivos que basados en los mejores ejemplos de la naturaleza, lleguen a donde no podemos, algo que de verdad haga que supere en verdad las capacidades conocidas de la naturaleza.'
+    htmlstr += 'Sí, es verdad que un cerebro que aprende y almacena más información que un humano es un gran desarrollo, pero no deja de ser una gran biblioteca, puede ser divertido, pero no sólo de diversión vive el hombre.'
+    htmlstr += '</div>'
+    htmlstr += '</div>'
+
+    return jsonify({'success' : 'true', 'content' : htmlstr})
 
 #@token_required
 #def create_user(current_user):
