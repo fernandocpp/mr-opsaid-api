@@ -245,32 +245,32 @@ def get_home_static():#(current_user):
             },
             {
             'id' : 2,
-            'title' : 'Hay topos en la playa', 
-            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'title' : 'Yesenia se va de platanitos', 
+            'extract' : 'La conocida Novia de Julito y amiga de "La máquina" nos sorprende con que ahora descubrió ...',
             'img_large': 'https://www.nytimes.com/images/2018/06/22/us/politics/backlash-ltr/00republicans1-mediumThreeByTwo440-v4.jpg'
             },
             {
             'id' : 3,
-            'title' : 'Hay topos en la playa', 
-            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'title' : 'El pasado no tan claro de la blanquita', 
+            'extract' : 'Después de la conversiación de esta tarde con Carloncho nos enteramos de que él y la blanquita ...',
             'img_large': 'https://www.nytimes.com/images/2018/07/02/business/02AHEAD/merlin_140591313_c5e6fa0e-a071-44fa-a1da-a22bf96bb12b-mediumThreeByTwo440.jpg'
             },
             {
             'id' : 4,
-            'title' : 'Hay topos en la playa', 
-            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'title' : 'Maisha y Gustavo finalmente se definen', 
+            'extract' : 'Después de tanta incertidumbre sobre si la relación es mono o ardilla finalmente Maisha nos confirma que ...',
             'img_large': 'https://www.nytimes.com/images/2018/07/01/us/01dc-protest-1sub/merlin_140546832_6410f6ce-d14d-4270-b329-adfb88b1938b-mediumThreeByTwo440.jpg'
             },
             {
             'id' : 5,
-            'title' : 'Hay topos en la playa', 
-            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'title' : 'Marisol y compañía', 
+            'extract' : 'Esta semana nos enteramos que un amigo de Maisha conoce a Marisol y no sólo eso sino que ...',
             'img_large': 'https://www.nytimes.com/images/2018/07/02/science/02-jp-abortion-print/00ABORTION1-mediumThreeByTwo440.jpg'
             },
             {
             'id' : 6,
-            'title' : 'Hay topos en la playa', 
-            'extract' : 'Se descubre una especie rara de topos que se reproducen con el agua ...',
+            'title' : 'Asary y la cachapa', 
+            'extract' : 'Si bien es cierto que Asary cocina dulces muy ricos, también nos enteramos que ...',
             'img_large': 'https://www.nytimes.com/images/2018/07/02/world/02TRAVEL-BAN-03/02TRAVEL-BAN-03-mediumThreeByTwo440.jpg'
             }
         ]
